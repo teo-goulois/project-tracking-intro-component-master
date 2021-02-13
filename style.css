@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap");
+@media (max-width: 39.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 40em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: url(/images/illustration-devices.svg) no-repeat;
+  background-position: 50vw center;
+}
+
+@media (max-width: 39.9375em) {
+  body {
+    background-size: 515px;
+    background-position: left 100px;
+  }
+}
+
+header {
+  padding: 5.4375rem 5.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 39.9375em) {
+  header {
+    padding: 2.5rem 2rem;
+  }
+}
+
+.navigation a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: #242942;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation a:not(:first-child) {
+  margin-left: 3.4375rem;
+}
+
+.navigation a:last-child {
+  color: #a0a1ac;
+  margin-left: 5.4375rem;
+}
+
+.navigation a:hover {
+  border-bottom: 1px solid #242942;
+}
+
+.navigation a:hover:last-child {
+  border-bottom: 1px solid #a0a1ac;
+}
+
+.hamburger-btn {
+  cursor: pointer;
+}
+
+.texte {
+  width: 50%;
+  margin-left: 5.8125rem;
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 39.9375em) {
+  .texte {
+    margin: 1rem;
+    width: 100%;
+    position: relative;
+    top: 250px;
+  }
+}
+
+.texte h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: #242942;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 39.9375em) {
+  .texte h1 {
+    font-size: 3rem;
+  }
+}
+
+.texte .p {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #a0a1ac;
+  margin: 30px 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex p {
+  color: white;
+  background-color: #242942;
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.flex h3 {
+  position: relative;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #a0a1ac;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 39.9375em) {
+  .btn {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.btn button {
+  background: #ff5c5c;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn button:hover {
+  opacity: 0.7;
+}
+
+.btn h2 {
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  color: #a0a1ac;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+@media (max-width: 39.9375em) {
+  .btn h2 {
+    font-size: 1rem;
+  }
+}
+
+.open {
+  left: 10%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 100px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1px 0 gray;
+          box-shadow: 0 0 1px 0 gray;
+  width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.open a {
+  margin: 0;
+  padding: 15px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  color: #242942;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+}
+
+.open a:last-child {
+  border-top: 1px solid #eef3f6;
+  color: #a0a1ac;
+}
+
+.open a:not(:first-child) {
+  margin-left: 0;
+}
+
+.open a:last-child {
+  color: #a0a1ac;
+  margin-left: 0;
+}
+/*# sourceMappingURL=style.css.map */
